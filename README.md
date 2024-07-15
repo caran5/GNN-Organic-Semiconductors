@@ -1,18 +1,17 @@
-
 # **Description**
-(DISCLAIMER: I am in no means a Condensed Matter Physicist. I am an undergraduate Chemical Engineering major having fun with machine learning. A lot of this information is found through Google, and citations are not done yet)
+(**DISCLAIMER**: I am in no means a Condensed Matter Physicist. I am an undergraduate Chemical Engineering major having fun with machine learning.)
 
-Organic molecules are molecules that are made of carbon and hydrogen, and can include other elements. An organic semiconductor refers to a type of material that is increasingly used in electronic device manufacturing, such as metal complex pigments like hexa-deca-fluoro copper phthalocyanine, for electron transport. Organic semiconductors, unlike conventional semiconductors, are made of polymers, which makes them more environmentally friendly and less costly to produce. New organic conductive materials, which can be mixed into inks and printed onto substrates, are now being used to produce flexible electronics. 
+Organic molecules, composed of carbon and hydrogen, often include other elements. Organic semiconductors, made from polymers, are increasingly used in electronic devices due to their environmental benefits and lower production costs compared to conventional semiconductors. Examples include metal complex pigments like hexa-deca-fluoro copper phthalocyanine for electron transport. These materials can be mixed into inks and printed onto substrates for flexible electronics.
 
-A factor in what makes an Organic Semiconductor is the the crystal lattices and the melting point of the molecule. In a perfect crystal at low temperatures, all electrons are in filled shells and there are no conduction electrons. However, impurities or thermal excitations can provide some conduction electrons. At high temperatures, thermal fluctuations can cause large ion vibrations that knock electrons out of filled shells, turning them into conduction electrons that contribute to conductivity.
+The crystal lattice structure and melting point of an organic semiconductor are crucial factors. In a perfect crystal at low temperatures, electrons are in filled shells with no conduction electrons. Impurities or thermal excitations can provide some conduction electrons. At high temperatures, thermal fluctuations can knock electrons out of filled shells, increasing conductivity.
 
-The object of this product is to optimize the conductivity of an organic semiconductor based on the symmetry of its crystal lattices. This is because symmetrical molecules in crystalline form have higher melting temperatures and exhibit lower solubilities compared with molecules of similar structure but with lower symmetry.
+The goal of this project is to optimize the conductivity of an organic semiconductor by enhancing the symmetry of its crystal lattices, as symmetrical molecules have higher melting temperatures and lower solubilities compared to less symmetrical molecules.
 
 ## **Evaluation**
 * **Category**: Computational Chemistry
 * **Industry**: Semiconductor Manufacturing
 * **Scope**:
-  * Version 1: Using a Graph Neural Network. The rationale of utilizing a Graph Neural Network is based on the dynamic geometry of an organic molecule; where, the nodes represent the atoms of the molecule, the edges represent the bond of the molecule, and the symmetry being a feature of the graph. These organic molecules will be associated with the global features of its crystallization force and its melting point. These features of the GNN will help incorporate the relationship between conductivity and stability.
+  * Version 1: Using a Graph Neural Network. The rationale of utilizing a Graph Neural Network is based on the dynamic geometry of an organic molecule; where, the nodes represent the atoms of the molecule, the edges represent the bond of the molecule, and the symmetry being a feature of the graph. These organic molecules will be associated with the global features of its crystallization force and its melting point. These features of the GNN will help incorporate the relationship between conductivity and stability. This model utilizes the data from "Discovery of Crystallizable Organic Semiconductors with Machine Learning" by Holly M. Johnson, Filipp Gusev, Jordan T. Dull, Yejoon Seo, Rodney D. Priestley, Olexandr Isayev, and Barry P. Rand.
 
 ## Version 1
 <p align="center">
@@ -28,9 +27,6 @@ In order to establish a metric of symmetries in these organic molecules, we need
 <p align="center">
   <img width="351" alt="image" src="https://github.com/user-attachments/assets/bec57683-4f58-4d0a-8272-1b6802cd54a7">
 </p>
-
-where the angle θlk is evaluated using an arbitrary, constant reference vector. By doing this measurement, we get a complex vector which tells us the orientation of the hexagon and when we take norm of this complex vector (|Ψk6|) we get a number between 0 and 1 which tells us how close to a hexagon the orientation of l points around k are.
-
 
 ## Code Overview
 
@@ -136,3 +132,18 @@ where the angle θlk is evaluated using an arbitrary, constant reference vector.
 | Step                      | Description                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
 | def calculate_symmetry_metric(molecule)    | Function that returns the metric of symmetry generated by the GNN|
+
+## Citations
+Shen, Z. S. “Exploring the Synthesis and Properties of Novel Semiconductor Materials.” ChemRxiv, 2023, chemrxiv.org/engage/chemrxiv/article-details/661eb94491aefa6ce1b1f0c9.
+
+Pantel, Guillaume. “2D Bond Orientational Order Analysis Method.” Guillaume Pantel, 2023, gpantel.github.io/analysis-method/2D_boo/.
+
+
+
+
+
+
+
+
+
+
