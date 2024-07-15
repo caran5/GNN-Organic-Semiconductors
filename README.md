@@ -11,15 +11,6 @@ The object of this product is to optimize the conductivity of an organic semicon
 * **Scope**:
   * Version 1: Using a Graph Neural Network. The rationale of utilizing a Graph Neural Network is based on the dynamic geometry of an organic molecule; where, the nodes represent the atoms of the molecule, the edges represent the bond of the molecule, and the symmetry being a feature of the graph. These organic molecules will be associated with the global features of its crystallization force and its melting point. These features of the GNN will help incorporate the relationship between conductivity and stability.
 
-### **Implementation (Version 1)**
-Conversion of SMILES string into graphical representation ready for data processing. 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0fda5f94-7c3a-4481-a066-b60ff50964c2" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/035548e8-b178-4cd2-b14b-a6aa5666666e" />
-</p>
-
 ## Code Overview
 
 ### Reading CSV Files
