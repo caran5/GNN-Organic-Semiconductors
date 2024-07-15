@@ -1,4 +1,7 @@
+
 # **Description**
+(DISCLAIMER: I am in no means a Condensed Matter Physicist. I am an undergraduate Chemical Engineering major having fun with machine learning. A lot of this information is found through Google, and citations are not done yet)
+
 Organic molecules are molecules that are made of carbon and hydrogen, and can include other elements. An organic semiconductor refers to a type of material that is increasingly used in electronic device manufacturing, such as metal complex pigments like hexa-deca-fluoro copper phthalocyanine, for electron transport. Organic semiconductors, unlike conventional semiconductors, are made of polymers, which makes them more environmentally friendly and less costly to produce. New organic conductive materials, which can be mixed into inks and printed onto substrates, are now being used to produce flexible electronics. 
 
 A factor in what makes an Organic Semiconductor is the the crystal lattices and the melting point of the molecule. In a perfect crystal at low temperatures, all electrons are in filled shells and there are no conduction electrons. However, impurities or thermal excitations can provide some conduction electrons. At high temperatures, thermal fluctuations can cause large ion vibrations that knock electrons out of filled shells, turning them into conduction electrons that contribute to conductivity.
@@ -10,6 +13,24 @@ The object of this product is to optimize the conductivity of an organic semicon
 * **Industry**: Semiconductor Manufacturing
 * **Scope**:
   * Version 1: Using a Graph Neural Network. The rationale of utilizing a Graph Neural Network is based on the dynamic geometry of an organic molecule; where, the nodes represent the atoms of the molecule, the edges represent the bond of the molecule, and the symmetry being a feature of the graph. These organic molecules will be associated with the global features of its crystallization force and its melting point. These features of the GNN will help incorporate the relationship between conductivity and stability.
+
+## Version 1
+<p align="center">
+  <img width="650" alt="image" src="https://github.com/user-attachments/assets/2583399b-7ff9-467e-aaa5-66288697735c">
+</p>
+
+<p align="center">
+   <img width="653" alt="image" src="https://github.com/user-attachments/assets/92c134aa-4113-4135-b724-11130a96f873">
+</p>
+
+In order to establish a metric of symmetries in these organic molecules, we need to psi-six formula. The psi-six formula is used to determine the bond-orientational order parameter in two dimensional systems. It is commonly applied in the analysis of phase transitions and crystallization processes. 
+
+<p align="center">
+  <img width="351" alt="image" src="https://github.com/user-attachments/assets/bec57683-4f58-4d0a-8272-1b6802cd54a7">
+</p>
+
+where the angle θlk is evaluated using an arbitrary, constant reference vector. By doing this measurement, we get a complex vector which tells us the orientation of the hexagon and when we take norm of this complex vector (|Ψk6|) we get a number between 0 and 1 which tells us how close to a hexagon the orientation of l points around k are.
+
 
 ## Code Overview
 
