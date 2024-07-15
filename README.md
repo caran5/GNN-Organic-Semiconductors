@@ -109,7 +109,7 @@ Conversion of SMILES string into graphical representation ready for data process
 |---------------------------|---------------------------------------------------------------------|
 | visualize_first_graph    | Visualizes the first valid molecular graph in crystallization_data_list and melting_point_data_list. |
 
-### Placeholder for Advanced GNN
+### Advanced GNN
 
 #### AdvancedSymmetryAwareGNN Class
 
@@ -117,7 +117,7 @@ Conversion of SMILES string into graphical representation ready for data process
 |---------------------------|-----------------------------------------------------------------------------------------------------|
 | Advanced GNN              | The AdvancedSymmetryAwareGNN class integrates node features, edge features, distances, and a symmetry metric Psi_6 into the message passing process using multi-layer perceptrons (MLPs) to enhance the model's performance by leveraging symmetry information. |
 
-### Placeholder for Symmetry Metric Calculation
+### Symmetry Metric Calculation
 
 #### calculate_symmetry_metric Function
 
